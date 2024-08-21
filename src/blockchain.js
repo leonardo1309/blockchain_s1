@@ -31,6 +31,13 @@ class Blockchain{
         }
         return true;
     }
+    getBlock(index){
+        if(index < 0 || index >= this.chain.length){
+            return false;
+        }else {
+            return this.chain[index];
+        }
+    }
 
 }
 
